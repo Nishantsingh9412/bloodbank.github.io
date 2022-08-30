@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/cities.js"></script>
+        <!-- Font-awesome -->
+        <script src="https://kit.fontawesome.com/a8c5a6da32.js" crossorigin="anonymous"> </script>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+      <!------------------------------ navbar ------------------------------------------------->
+      <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white">BLOODBANK . COM </h5>
+                <span class="text-info">A social initiative</span>        
+                <ul class="nav justify-content-end">
+                    &nbsp;&nbsp;
+                    <li class="nav-item">
+                    <label for="Donor_login" class="text-white">Donor Login</label>
+                    <input type="text" name="bloodonorlogin" value=" ">
+                    </li>&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <label for="password" class="text-white">Password</label>
+                        <input type="password" name="bloodonorpassword" value="">
+                    </li>&nbsp;
+                   
+                    <button type="button" class="button1"> Login </button>               
+             </ul>
+                <ul class="nav justify-content-left">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="why_donate_blood.html">Why  Donate Blood</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="who_can_give_blood.html">Who can give blood</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Refer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+            </div>
+        </nav>
+        <div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">  
+                    <h2 class="text-dark ">Find a Donor</h2>
+                    <form>
+                        <label for="Group" class="text-dark"> State : </label>
+                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+                                <script language="javascript">print_state("sts");</script>
+                                <br>
+                        <label for="Group" class="text-dark"> City : </label>
+                            <select id ="state" class="form-control" required></select>
+                        <br>
+                    
+                       <label for="Group" class="text-dark">Area : </label>
+                        <select class="form-select" >
+                                    <option value="0"> Select </option>
+                                    <option>Sector-10</option>
+                                    <option>Sector-88</option>
+                                    <option>Sector-22</option>
+                                    <option>Sector-94</option>
+                                    <option> Secor-35 </option>
+                            </select>
+                         <br>
+                        <label for="Group" class="text-dark"> Group : </label>
+                        <select class="form-select" >
+                                    <option value="0"> Select </option>
+                                    <option>A Positive</option>
+                                    <option>A Negative</option>
+                                    <option>A Unknown</option>
+                                    <option>B Positive</option>
+                                    <option>B Negative</option>
+                                    <option>B Unknown</option>
+                                    <option>AB Positive</option>
+                                    <option>AB Negative</option>
+                                    <option>AB Unknown</option>
+                                    <option>O Positive</option>
+                                    <option>O Negative</option>
+                                    <option>O Unknown</option>
+                                    <option>Unknown</option>
+                            </select>
+                         <br><br>
+                    </form>
+                        <button type="submit" class="btn btn-dark"  id="searchbtn">  Search  </button>
+                    <br><br>
+                </div>
+                    <div class="container-fluid col  "> <img src="b4.png" alt="..." class="img-fluid" id="bimg"></div>
+            </div>
+        </div>
+        <br><br>
+        <h1 class="ml6" style="text-align: center;">
+          <span class="text-wrapper">
+            <span class="letters" style="color:black"> Donation </span>
+            <span class="letters" style="color:red">  Process</span>
+          </span>
+        </h1>
+          <br><br><br><br>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="images\s-1_.jpg" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title">Step 1: The Test</h5>
+              <p class="card-text">The donor, lets call him Kaushal, goes into a room where he is asked to sit down in the donation area. He is asked some basic health questions, and a small sample of Kaushal’s blood is taken to assess whether he is healthy enough to give blood that day.
+                Luckily, Kaushal is healthy. He has not had alcohol for 24 hours, or taken any drugs, so he can donate blood.
+                Want to check if you can donate blood? Take our short quiz on blood donation!</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images\s-2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 2:  The Donation</h5>
+              <p class="card-text">
+                Blood can be donated in a few different ways. “Whole blood donation” is the most common type. This means that your blood is not broken down into any of its parts whilst it is taken.
+                A phlebotomist (a person trained to take blood) sterilizes Kaushal’s arm before drawing around 500ml blood. This only takes around 10 minutes. All materials used during each donation are pre-packaged, 
+                sterile and safely disposed of after use. 
+                Kaushal is then given refreshments and sits for a short period of time before he goes 
+                on with his day.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images\s-3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 3: Storing the Blood</h5>
+              <p class="card-text">Blood has to be stored in a certain way to protect it from damage. Kaushal’s blood is collected in special blood bags, which are coated with anticoagulation factors to stop the blood from clotting. These bags are designed to make sure that the blood is stored safely and can be transported.
+                A small sample of his blood is also sent for testing. This is a very important step, as there are certain diseases such as HIV and hepatitis B & C that can be transmitted to a person receiving blood. It also means that donors like Kaushal can become aware of any illnesses they may have.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="images\s-4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 4: Blood Fractionation</h5>
+                <p class="card-text">Kaushal’s blood is then fractionated, meaning it is separated into its smaller parts. These include: proteins, red blood cells and plasma.
+                  In order to access these parts, the blood is centrifuged (spun at a really high speed) until it seperates.
+                  There are around 15 proteins in blood that can be separated. Often these proteins save the lives of those affected by trauma, 
+                  disease or genetic illnesses.
+                </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images\s-5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 5: Storing and transportation.</h5>
+                <p class="card-text">
+                  Both cryoprecipitate and cryo-poor  plasma are frozen and thawed when needed.
+                  They can be kept for up to a year.
+                  Other parts of the blood include platelets
+                  that are kept at room temperature and last for 5 days. 
+                  Whole blood is kept refrigerated and can last for 42 days.
+                </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images\s-6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Step 6: Saving lives!</h5>
+                <p class="card-text">All the different parts of Kaushal’s blood can be used for different people with different needs.
+                  Whole blood can be used for people with anemia, or people who have lost blood through surgery or childbirth. 
+                  Platelets can save the lives of those who need an organ transplant or chemotherapy. 
+                  Cryoprecipitate and plasma can help those with trauma injuries, or going through surgery.
+                  Through one simple act, donating blood, Kaushal has become a life saver!
+                </p>
+            </div>
+          </div>
+        </div>  
+        <br><br>
+         <h1 class="ml6" style="text-align: center;">
+          <span class="text-wrapper">
+              <span class="letters" style="color:black"> Where Would You like To Donate </span>
+              <span style="color:red">??</span>
+        </h1>
+        <br>
+
+        
+
+
+        <!-- Search Bar  -->  
+<form class="form-inline">
+  <div class="form-group mx-sm-5 mb-sm-1">
+    <label for="s" class="sr-only">Password</label>
+    <input type="text" class="form-control"  placeholder="Search">
+  </div>
+  <button  class="btn btn-success mb-2 ml-3 " id="s_btn" >Search</button>
+</form>
+
+        <br><br>
+        <h5> &nbsp;&nbsp;  Give Feedback   <i class="fa fa-plus" aria-hidden="true"></i>  </h5> 
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <!-- For Text  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="js/bootstrap.bundle.min.js"> </script>
+                 <!-- main    -->
+        <script src="js/main.js"> </script>
+  </body>
+</html>

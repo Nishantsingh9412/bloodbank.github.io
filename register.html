@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>BloodBank & Donor Management System | Become A Donar</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://kit.fontawesome.com/a8c5a6da32.js" rel="stylesheet"
+            type="text/css">
+        <link href="css/modern-business.css" rel="stylesheet">
+        <style>
+    body{
+        background-image: url("2381638.png");
+
+    }
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+        <style>
+    .errorWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #dd3d36;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.succWrap{
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #5cb85c;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+    </style>
+    </head>
+
+    <body>
+
+        
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <h1 class="mt-4 mb-3 text-white">Become a <small>Donor</small></h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="text-white">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Become a Donor</li>
+            </ol>
+
+            <!-- Content Row -->
+            <form name="donar" method="post">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Full Name<span
+                                style="color:white">*</span></div>
+                        <div><input type="text" name="fullname"
+                                class="form-control" required></div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Mobile Number<span
+                                style="color:white">*</span></div>
+                        <div><input type="text" name="mobileno"
+                                class="form-control" required></div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Email Id</div>
+                        <div><input type="email" name="emailid"
+                                class="form-control"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Age<span style="color:white">*</span></div>
+                        <div><input type="text" name="age" class="form-control"
+                                required></div>
+                    </div>
+
+
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Gender<span style="color:white">*</span></div>
+                        <div><select name="gender" class="form-control"
+                                required>
+                                <option value="">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Blood Group<span
+                                style="color:white">*</span> </div>
+                        <div>
+                            <select name="bloodgroup" class="form-control"
+                                required>
+                                <option value="0"> Select</option>
+                                <option>A Positive</option>
+                                <option>A Negative</option>
+                                <option>A Unknown</option>
+                                <option>B Positive</option>
+                                <option>B Negative</option>
+                                <option>B Unknown</option>
+                                <option>AB Positive</option>
+                                <option>AB Negative</option>
+                                <option>AB Unknown</option>
+                                <option>O Positive</option>
+                                <option>O Negative</option>
+                                <option>O Unknown</option>
+                                <option>Unknown</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div  class="text-white" >Address</div>
+                        <div><textarea class="form-control" name="address"  ></textarea></div>
+                    </div>
+
+                    <div class="col-lg-8 mb-4">
+                        <div  class="text-white" >Message<span style="color:white">*</span></div>
+                        <div><textarea class="form-control" name="message"
+                                required> </textarea></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div><input type="submit" name="submit" class="btn
+                                btn-primary" value="submit"
+                                style="cursor:pointer"></div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- /.row -->
+            </form>
+            <!-- /.row -->
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/tether/tether.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>
